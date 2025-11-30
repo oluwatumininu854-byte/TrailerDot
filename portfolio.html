@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio | Book Trailer Samples</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Portfolio-specific styling for presentation */
+        .trailer-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        .trailer-item {
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio for embedded video */
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .trailer-caption {
+            padding: 15px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .trailer-caption h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">🎬 Book Trailer Co.</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Packages</a></li>
+                <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="order.html">Order Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="portfolio-samples">
+            <h2>Our Cinematic Creations</h2>
+            <p style="text-align: center;">Explore a selection of our finest book trailers across various genres.</p>
+            
+            <div class="trailer-gallery">
+                
+                <div class="trailer-item">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1?rel=0" allowfullscreen></iframe>
+                    </div>
+                    <div class="trailer-caption">
+                        <h3>The Lost Realm (Fantasy)</h3>
+                        <p>Package: Premium Trailer</p>
+                    </div>
+                </div>
+
+                <div class="trailer-item">
+                    <div class="video-wrapper">
+                         <iframe src="https://www.youtube.com/embed/VIDEO_ID_2?rel=0" allowfullscreen></iframe>
+                    </div>
+                    <div class="trailer-caption">
+                        <h3>The Silent Witness (Thriller)</h3>
+                        <p>Package: Standard Trailer</p>
+                    </div>
+                </div>
+
+                <div class="trailer-item">
+                    <div class="video-wrapper">
+                         <iframe src="https://www.youtube.com/embed/VIDEO_ID_3?rel=0" allowfullscreen></iframe>
+                    </div>
+                    <div class="trailer-caption">
+                        <h3>Whispers of the Coast (Romance)</h3>
+                        <p>Package: Premium Trailer</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <p style="text-align: center; margin-top: 40px;"><a href="order.html" class="button-primary">Ready to Order?</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Book Trailer Co. | <a href="contact.html">Get in Touch</a></p>
+    </footer>
+</body>
+</html>
 
