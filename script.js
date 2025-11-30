@@ -25,10 +25,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Assign price based on selection
             if (packageValue === 'standard') {
-                price = 299;
+                // NEW PRICE
+                price = 950;
                 packageName = 'Standard Trailer';
             } else if (packageValue === 'premium') {
-                price = 499;
+                // NEW PRICE
+                price = 1250;
                 packageName = 'Premium Trailer';
             } else {
                 alert('Please select a valid package before proceeding.');
@@ -43,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
             paymentSection.style.display = 'block';
 
             document.getElementById('payment-amount').innerHTML = 
-                `**Confirming:** You are ordering the **${packageName}** for **${bookTitle}**. Total amount due: **$${price}**.`;
+                `**Confirming:** You are ordering the **${packageName}** for **$${price}**. Total amount due: **$${price}**.`;
 
             // NOTE: In a live app, secure payment processing would be triggered here.
         });
@@ -51,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // 3. Mock payment completion handler (for demonstration only)
         mockButton.addEventListener('click', function() {
             document.getElementById('payment-message').innerHTML = 
-                "✅ **Success!** Your order payment has been completed. Check your email for confirmation.";
+                "✅ **Success!** Your order payment has been completed. Check your email for confirmation. (This is a demo only.)";
             this.style.display = 'none'; // Hide button after "payment"
         });
     }
@@ -66,4 +68,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-
